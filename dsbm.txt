@@ -1,4 +1,4 @@
-act=1
+act=0
 import os
 
 # Get the current directory
