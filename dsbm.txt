@@ -1,0 +1,19 @@
+act=1
+import os
+
+# Get the current directory
+current_directory = os.getcwd()
+
+# List all files in the directory
+files = os.listdir(current_directory)
+
+# Iterate through each file
+for file in files:
+    # Check if the file has a .py extension
+    if file.endswith(".py"):
+        # Open the file in append mode
+        with open(file, "a") as f:
+            # Write "hello!!" to the file
+            f.write("hello!!\n")
+            # Optional: You can also print the file name for confirmation
+            print(f"Wrote 'hello!!' to {file}")
